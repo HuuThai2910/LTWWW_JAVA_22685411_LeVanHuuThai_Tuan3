@@ -5,7 +5,7 @@
   Time: 8:18 PM
   To change this template use File | Settings | File Templates.
 --%>
-<%@ page import="fit.iuh.edu.levanhuuthai_22685411_tuan3.User" %>
+<%@ page import="fit.iuh.edu.levanhuuthai_22685411_tuan3.Bai1.User" %>
 <%@ page import="java.util.List" %>
 <%@ page import="java.time.format.DateTimeFormatter" %>
 <%
@@ -25,12 +25,12 @@
 <p><strong>Date of Birth:</strong> <%= user.getDateOfBirth().format(formatter) %></p>
 <p><strong>Email:</strong> <%= user.getEmail() %></p>
 <p><strong>Mobile:</strong> <%= user.getNumber() %></p>
-<p><strong>Gender:</strong> <%= user.getGender() %></p>
 <p><strong>Address:</strong> <%= user.getAddress() %></p>
 <p><strong>City:</strong> <%= user.getCity() %></p>
 <p><strong>Pin Code:</strong> <%= user.getCode() %></p>
 <p><strong>State:</strong> <%= user.getState() %></p>
 <p><strong>Country:</strong> <%= user.getCountry() %></p>
+<p><strong>Course applies for:</strong> <%= user.getCourse() %></p>
 <p><strong>Hobbies:</strong>
 <ul>
     <% for (String h : user.getHobbies()) { %>
@@ -38,7 +38,6 @@
     <% } %>
 </ul>
 </p>
-<p><strong>Course:</strong> <%= user.getCourse() %></p>
 </body>
 </html>
 

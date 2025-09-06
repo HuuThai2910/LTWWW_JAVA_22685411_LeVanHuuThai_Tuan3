@@ -30,6 +30,7 @@
 <p><strong>Pin Code:</strong> <%= user.getCode() %></p>
 <p><strong>State:</strong> <%= user.getState() %></p>
 <p><strong>Country:</strong> <%= user.getCountry() %></p>
+<p><strong>Course applies for:</strong> <%= user.getCourse() %></p>
 <p><strong>Hobbies:</strong>
 <ul>
     <% for (String h : user.getHobbies()) { %>

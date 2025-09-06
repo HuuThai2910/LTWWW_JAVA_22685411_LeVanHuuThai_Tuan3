@@ -196,9 +196,10 @@
     <div class="form-group">
       <label>Course applies for:</label>
       <div class="gender-options">
-        BCA <input type="radio" name="course" value="BCA" />
-        B.Com<input type="radio" name="course" value="B.Com" />
-        B.Sc<input type="radio" name="course" value="B.A" />
+        <input type="radio" name="course" value="BCA" /> BCA
+        <input type="radio" name="course" value="B.Com" /> B.Com
+        <input type="radio" name="course" value="B.Sc" /> B.Sc
+        <input type="radio" name="course" value="B.A" /> B.A
       </div>
     </div>
     <div style="margin-top: 28px; display: flex; align-items: center; justify-content: center; gap: 30px">

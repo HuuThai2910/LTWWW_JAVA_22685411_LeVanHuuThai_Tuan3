@@ -11,7 +11,7 @@ import java.time.LocalDate;
 import java.util.Arrays;
 import java.util.List;
 
-@WebServlet(name = "registerServlet", value = "/bai1/register")
+@WebServlet(name = "registerServlet", value = "/register")
 public class RegisterServlet extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse resp) throws ServletException, IOException {
@@ -29,6 +29,7 @@ public class RegisterServlet extends HttpServlet {
         String code = request.getParameter("code");
         String state = request.getParameter("state");
         String country = request.getParameter("country");
+        String course = request.getParameter("course");
 
         String[] hobbiesArray = request.getParameterValues("hobby");
         String hobbyOther = request.getParameter("hobbyOther");
@@ -45,7 +46,7 @@ public class RegisterServlet extends HttpServlet {
                 firstName, lastName, dateOfBirth,
                 email, number, address,
                 city, code, state,
-                country, hobbies
+                country, hobbies, course
         );
         request.setAttribute("user", user);
         request.getRequestDispatcher("result.jsp").forward(request, resp);

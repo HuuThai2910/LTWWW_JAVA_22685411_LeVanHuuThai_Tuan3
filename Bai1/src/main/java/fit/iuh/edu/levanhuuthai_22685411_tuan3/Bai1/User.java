@@ -24,4 +24,5 @@ public class User {
     private String state;
     private String country;
     private List<String> hobbies;
+    private String course;
 }

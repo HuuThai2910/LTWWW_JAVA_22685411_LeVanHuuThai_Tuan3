@@ -144,7 +144,7 @@
 
     <div class="form-group">
       <label>Country:</label>
-      <input type="text" name="country" value="India" readonly />
+      <input type="text" name="country"/>
     </div>
 
     <div class="form-group">
@@ -193,7 +193,15 @@
         <td><input type="text" name="year4" /></td>
       </tr>
     </table>
-
+    <div class="form-group">
+      <label>Course applies for:</label>
+      <div class="gender-options">
+        <input type="radio" name="course" value="BCA" /> BCA
+        <input type="radio" name="course" value="B.Com" /> B.Com
+        <input type="radio" name="course" value="B.Sc" /> B.Sc
+        <input type="radio" name="course" value="B.A" /> B.A
+      </div>
+    </div>
     <div style="margin-top: 28px; display: flex; align-items: center; justify-content: center; gap: 30px">
       <button type="submit">Submit</button>
       <button type="reset">Reset</button>
